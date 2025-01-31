@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Features{% endblock %}
+
+{% block content %}
+<section class="features-hero">
+    <div class="features-hero-content" data-aos="fade-up">
+        <h1>Our Features</h1>
+        <p>Discover the tools and resources we offer to make blood donation easier</p>
+    </div>
+</section>
+
+<section class="feature-cards">
+    <div class="card" data-aos="flip-left">
+        <div class="card-icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <h3>Find Donors</h3>
+        <p>Quickly locate blood donors in your area based on blood type and location.</p>
+        <a href="https://bloodmatching.streamlit.app/" class="card-btn" target="_blank">Learn More</a>
+    </div>
+
+    <div class="card" data-aos="flip-left" data-aos-delay="100">
+        <div class="card-icon">
+            <i class="fas fa-hospital"></i>
+        </div>
+        <h3>Blood Demand</h3>
+        <p>Predicting the demand for blood in different regions based on historic data.</p>
+        <a href="https://blooddemand.streamlit.app/" class="card-btn" target="_blank">Find Banks</a>
+    </div>
+
+    <div class="card" data-aos="flip-left" data-aos-delay="200">
+        <div class="card-icon">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h3>Geospatial Analysis</h3>
+        <p>Book your donation appointment with just a few clicks.</p>
+        <a href="https://geosptaial.streamlit.app/" class="card-btn" target="_blank">Schedule Now</a>
+    </div>
+
+    <div class="card" data-aos="flip-left" data-aos-delay="300">
+        <div class="card-icon">
+            <i class="fas fa-bell"></i>
+        </div>
+        <h3>DOnation Points</h3>
+        <p>Based on the donation , AI gives a number of points and bagdes.</p>
+        <a href="https://pointergame.streamlit.app/" class="card-btn" target="_blank">Set Alerts</a>
+    </div>
+
+    <div class="card" data-aos="flip-left" data-aos-delay="400">
+        <div class="card-icon">
+            <i class="fas fa-user-md"></i>
+        </div>
+        <h3>Health Tips/Chatbot</h3>
+        <p>Get expert advice on blood donation and maintaining good health.</p>
+        <a href="https://bloodchatbot.streamlit.app/" class="card-btn" target="_blank">Read More</a>
+    </div>
+</section>
+{% endblock %} 

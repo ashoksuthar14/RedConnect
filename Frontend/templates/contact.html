@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+    <div class="contact-hero-content" data-aos="fade-up">
+        <h1>Get in Touch</h1>
+        <p>We're here to help and answer any questions you might have</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+            <div class="info-block">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Location</h3>
+                <p>123 Healthcare Avenue<br>Medical District, City 12345</p>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-phone"></i>
+                <h3>Phone Number</h3>
+                <p>+1 (234) 567-8900<br>+1 (234) 567-8901</p>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Address</h3>
+                <p>info@redconnect.com<br>support@redconnect.com</p>
+            </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %} 

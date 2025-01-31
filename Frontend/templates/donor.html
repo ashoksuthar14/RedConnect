@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Donor Registration{% endblock %}
+
+{% block content %}
+<section class="donor-hero">
+    <div class="donor-hero-content" data-aos="fade-up">
+        <h1>Become a Donor</h1>
+        <p>Join our community of life-savers and make a difference today</p>
+    </div>
+</section>
+
+<section class="donor-form-section">
+    <div class="form-container" data-aos="fade-up">
+        <form class="donor-form" id="donorForm">
+            <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                <h2>Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <h2>Medical Information</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="bloodType">Blood Type</label>
+                        <select id="bloodType" name="bloodType" required>
+                            <option value="">Select Blood Type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="18" max="65" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" name="weight" min="45" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastDonation">Last Donation Date (if any)</label>
+                        <input type="date" id="lastDonation" name="lastDonation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <h2>Location Details</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="hospital">Preferred Hospital</label>
+                        <select id="hospital" name="hospital" required>
+                            <option value="">Select Hospital</option>
+                            <option value="city-hospital">City General Hospital</option>
+                            <option value="apollo">Apollo Hospital</option>
+                            <option value="fortis">Fortis Healthcare</option>
+                            <option value="max">Max Super Speciality Hospital</option>
+                            <option value="medanta">Medanta Hospital</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group consent-group" data-aos="fade-up" data-aos-delay="400">
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to be contacted for blood donation and confirm that the information provided is accurate.</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="500">Register as Donor</button>
+        </form>
+    </div>
+</section>
+{% endblock %} 

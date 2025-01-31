@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<section class="profile-hero">
+    <div class="profile-cover"></div>
+    <div class="profile-header">
+        <div class="profile-avatar" data-aos="fade-right">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="profile-info" data-aos="fade-left">
+            <h1>Sweta</h1>
+            <p class="blood-type">A+ Blood Type</p>
+            <div class="badge-container">
+                <span class="badge gold" title="Gold Donor"><i class="fas fa-award"></i></span>
+                <span class="badge silver" title="5+ Donations"><i class="fas fa-medal"></i></span>
+                <span class="badge lifesaver" title="Frequent Donor"><i class="fas fa-heart"></i></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="profile-content">
+    <div class="profile-container">
+        <div class="profile-stats" data-aos="fade-up">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>8</h3>
+                    <p>Total Donations</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>2,400</h3>
+                    <p>Points Earned</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>24</h3>
+                    <p>Lives Impacted</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-sections">
+            <div class="profile-section" data-aos="fade-up">
+                <h2><i class="fas fa-info-circle"></i> Personal Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Email</label>
+                        <p>sweta.doe@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone</label>
+                        <p>+1 (234) 567-8900</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Date of Birth</label>
+                        <p>January 15, 1990</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Last Donation</label>
+                        <p>March 10, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section rewards" data-aos="fade-up">
+                <h2><i class="fas fa-gift"></i> Rewards & Benefits</h2>
+                <div class="rewards-grid">
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3>20% Off</h3>
+                        <p>Next Medical Checkup</p>
+                        <span class="points">500 points</span>
+                    </div>
+                    <div class="reward-card active">
+                        <div class="reward-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Free Medicine</h3>
+                        <p>Monthly Supply</p>
+                        <span class="points">1000 points</span>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <h3>30% Off</h3>
+                        <p>Hospital Stay</p>
+                        <span class="points">2000 points</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section donation-history" data-aos="fade-up">
+                <h2><i class="fas fa-history"></i> Donation History</h2>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 10, 2024</div>
+                        <div class="timeline-content">
+                            <h3>City General Hospital</h3>
+                            <p>Regular Donation</p>
+                            <span class="points-earned">+300 points</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 15, 2023</div>
+                        <div class="timeline-content">
+                            <h3>Emergency Response</h3>
+                            <p>Emergency Donation</p>
+                            <span class="points-earned">+500 points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

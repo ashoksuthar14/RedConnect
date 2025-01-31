@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<section class="register-hero">
+    <div class="register-hero-content" data-aos="fade-up">
+        <h1>Join RedConnect</h1>
+        <p>Create your account and become part of our life-saving community</p>
+    </div>
+</section>
+
+<section class="register-form-section">
+    <div class="form-container" data-aos="fade-up">
+        <form class="register-form" id="registerForm">
+            <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                <h2>Account Information</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <h2>Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <h2>Blood Donation Information</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="bloodType">Blood Type</label>
+                        <select id="bloodType" name="bloodType" required>
+                            <option value="">Select Blood Type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Previous Donations</label>
+                        <div class="radio-group">
+                            <input type="radio" id="donorYes" name="isDonor" value="yes">
+                            <label for="donorYes">Yes</label>
+                            <input type="radio" id="donorNo" name="isDonor" value="no">
+                            <label for="donorNo">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row donation-details" id="donationDetails" style="display: none;">
+                    <div class="form-field">
+                        <label for="donationCount">Number of Previous Donations</label>
+                        <input type="number" id="donationCount" name="donationCount" min="0">
+                    </div>
+                    <div class="form-field">
+                        <label for="lastDonation">Last Donation Date</label>
+                        <input type="date" id="lastDonation" name="lastDonation">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="400">Create Account</button>
+        </form>
+    </div>
+</section>
+{% endblock %} 
